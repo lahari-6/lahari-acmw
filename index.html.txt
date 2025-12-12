@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Café Bliss - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Café Bliss</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Brewing Happiness, One Cup at a Time ☕</h2>
+    <p>Welcome to Café Bliss, your cozy corner for coffee and conversations.</p>
+  </section>
+
+  <section class="menu">
+    <h2>Our Favorites</h2>
+    <ul>
+      <li>Espresso</li>
+      <li>Cappuccino</li>
+      <li>Chocolate Croissant</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Café Bliss</p>
+  </footer>
+</body>
+</html>
