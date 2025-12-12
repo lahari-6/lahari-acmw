@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Café Bliss - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Café Bliss</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Brewing Happiness, One Cup at a Time ☕</h2>
+    <p>Welcome to Café Bliss, your cozy corner for coffee and conversations.</p>
+  </section>
+
+  <section class="menu">
+    <h2>Our Favorites</h2>
+    <ul>
+      <li>Espresso</li>
+      <li>Cappuccino</li>
+      <li>Chocolate Croissant</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Café Bliss</p>
+  </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Café Bliss - About</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Café Bliss</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="about">
+    <h2>Our Story</h2>
+    <p>Café Bliss was founded in 2020 with a simple mission: to serve sustainable coffee in a warm, welcoming space. We believe in community, creativity, and the joy of sharing a cup together.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Café Bliss</p>
+  </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Café Bliss - Contact</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Café Bliss</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="contact">
+    <h2>Get in Touch</h2>
+    <p>📍 123 Coffee Street, Bengaluru</p>
+    <p>📞 +91 3333333333</p>
+    <p>✉️ cafe@bliss.com</p>
+
+    <form id="contactForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+      
+      <label for="message">Message:</label>
+      <textarea id="message" required></textarea>
+      
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Café Bliss</p>
+  </footer>
+</body>
+</html>
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #fdf6f0;
+  color: #333;
+}
+
+header {
+  background-color: #6f4e37;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.hero, .about, .contact, .menu {
+  padding: 20px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+}
+
+form input, form textarea, form button {
+  margin: 10px 0;
+  padding: 10px;
+}
+
+footer {
+  background-color: #A87765;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+  let name = document.getElementById("name").value.trim();
+  let email = document.getElementById("email").value.trim();
+  let message = document.getElementById("message").value.trim();
+
+  if (!name || !email || !message) {
+    alert("Please fill out all fields before submitting!");
+    event.preventDefault();
+  } else {
+    alert("Thank you for contacting Café Bliss!");
+  }
+});
